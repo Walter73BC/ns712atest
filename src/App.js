@@ -428,7 +428,7 @@ function App() {
             gas limit.
           >
             Built with <span role="img" aria-label="love">♥️</span> by 
-            <a target="_blank" href="https://nsnft.io">@nsnft.io</a>
+            <a target="_blank" rel="noopener noreferrer" href="https://nsnft.io">@nsnft.io</a>
           </s.TextDescription>
         </s.Container>
       </s.Container>
