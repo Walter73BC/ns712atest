@@ -428,8 +428,8 @@ function App() {
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
           >
-            Built with <span>♥️</span> by <a
-            className="footer-text" href={WEB_LINK} target="_blank" rel="noreferrer" >@DiFool0x</a>
+            Built with <span role="img" aria-label="love">♥️</span> by <a
+            href={WEB_LINK} target="_blank" rel="noopener" >@nsnft.io</a>
           </s.TextDescription>
         </s.Container>
       </s.Container>
