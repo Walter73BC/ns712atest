@@ -5,6 +5,7 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 
+const WEB_LINK = `https://nsnft.io`;
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
 
@@ -426,6 +427,9 @@ function App() {
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
+          >
+            Built with <span>♥️</span> by <a
+            className="footer-text" href={WEB_LINK} target="_blank" rel="noreferrer" >@DiFool0x</a>
           </s.TextDescription>
         </s.Container>
       </s.Container>
