@@ -405,7 +405,7 @@ const Home = () => {
                 )}
               </>
             )}
-            <s.SpacerMedium />
+            <s.SpacerSmall />
           </s.Container>
           <s.SpacerLarge />
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -416,7 +416,7 @@ const Home = () => {
             />
           </s.Container>
         </ResponsiveWrapper>
-        <s.SpacerMedium />
+        <s.SpacerSmall />
         <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
           <s.TextDescription
             style={{
@@ -438,6 +438,9 @@ const Home = () => {
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
+            <s.SpacerSmall />
+            Built with <span role="img" aria-label="love">♥️</span> by 
+            <a target="_blank" rel="noopener noreferrer" href="https://nsnft.io">@nsnft.io</a>
           </s.TextDescription>
         </s.Container>
       </s.Container>
