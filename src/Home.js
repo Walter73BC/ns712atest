@@ -425,7 +425,7 @@ const Home = () => {
             }}
           >
             Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} ) and the correct address.
+            {CONFIG.NETWORK.NAME} ) and the correct address.</p>
             Please note: Once you make the purchase, you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
