@@ -219,7 +219,7 @@ const Home = () => {
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg alt={"example"} src={"/config/images/example.gif"} />
           </s.Container>
-          <s.SpacerLarge />
+          <s.SpacerMedium />
           <s.Container
             flex={2}
             jc={"center"}
@@ -304,7 +304,7 @@ const Home = () => {
                   1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
-                <s.SpacerXSmall />
+                <s.SpacerSmall />
                 <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
@@ -356,7 +356,7 @@ const Home = () => {
                     >
                       {feedback}
                     </s.TextDescription>
-                    <s.SpacerMedium />
+                    <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
                         style={{ lineHeight: 0.4 }}
@@ -368,7 +368,7 @@ const Home = () => {
                       >
                         -
                       </StyledRoundButton>
-                      <s.SpacerMedium />
+                      <s.SpacerSmall />
                       <s.TextDescription
                         style={{
                           textAlign: "center",
@@ -377,7 +377,7 @@ const Home = () => {
                       >
                         {mintAmount}
                       </s.TextDescription>
-                      <s.SpacerMedium />
+                      <s.SpacerSmall />
                       <StyledRoundButton
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
@@ -407,7 +407,7 @@ const Home = () => {
             )}
             <s.SpacerSmall />
           </s.Container>
-          <s.SpacerLarge />
+          <s.SpacerMedium />
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
