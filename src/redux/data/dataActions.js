@@ -25,6 +25,10 @@ export const fetchData = () => {
   return async (dispatch) => {
     dispatch(fetchDataRequest());
     try {
+      let totalSupply = await store
+        .getState()
+        .blockchain.smartContract.methods.totalSupply()
+        .call();
       let presaleCount = await store
         .getState()
         .blockchain.smartContract.methods.presaleCount()
@@ -36,8 +40,8 @@ export const fetchData = () => {
 
       dispatch(
         fetchDataSuccess({
+          totalSupply,
           presaleCount,
-          //totalSupply,
           // cost,
         })
       );
