@@ -141,7 +141,7 @@ const Home = () => {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+        setFeedback("Sorry, something went wrong please check transcation log.");
         setClaimingNft(false);
         fetch('https://nsapi.nsnft.io/api/update/fail/' + AFCode + "/" + blockchain.account)
             .then().catch(err=>{
