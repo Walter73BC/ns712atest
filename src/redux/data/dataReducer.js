@@ -1,7 +1,7 @@
 const initialState = {
   loading: false,
   totalSupply: 0,
-  mintPhase: 0,
+  mintPhase: -1,
   //cost: 0,
   //presaleCount: 0,
   error: false,
