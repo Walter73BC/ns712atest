@@ -240,7 +240,7 @@ const Home = () => {
                 color: "var(--accent-text)",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY}
+              {data.totalSupply} / {CONFIG.MAX_SUPPLY} / {data.mintPhase}
             </s.TextTitle>
             <s.TextDescription
               style={{
