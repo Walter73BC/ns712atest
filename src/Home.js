@@ -313,7 +313,25 @@ const Home = () => {
                   {CONFIG.MARKETPLACE}
                 </StyledLink>
               </>
-            ) : (
+            ) : (null)}
+            { data.mintPhase === "0"  || data.mintPhase === "1" ? (
+                <>
+                  <s.TextTitle
+                    style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  >
+                    The sale has ended.
+                  </s.TextTitle>
+                  <s.TextDescription
+                    style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  >
+                    You can still find {CONFIG.NFT_NAME} on
+                  </s.TextDescription>
+                  <s.SpacerSmall />
+                  <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+                    {CONFIG.MARKETPLACE}
+                  </StyledLink>
+                </>
+              ) : (
               <>
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -421,7 +439,7 @@ const Home = () => {
                   </>
                 )}
               </>
-            )}
+              )}
             <s.SpacerSmall />
           </s.Container>
           <s.SpacerMedium />
