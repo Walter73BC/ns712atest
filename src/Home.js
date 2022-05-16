@@ -202,6 +202,23 @@ const Home = () => {
   useEffect(() => {
     getData();
   }, [blockchain.account]);
+  
+  const nowPhase = () => {
+    switch(data.mintPhase){
+	    case 0:
+		    return "Pause";
+	    case 1:
+		    return "Airdrop";
+	    case 2:
+		    return "Presale";
+	    case 3:
+		    return "Public Sale";
+	    case 4:
+		    return "Finished";
+	    default:
+		    return "Loading ...";
+	  }
+  };
 
   return (
     <s.Screen>
@@ -240,7 +257,7 @@ const Home = () => {
                 color: "var(--accent-text)",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY} / {data.mintPhase}
+              {data.totalSupply} / {CONFIG.MAX_SUPPLY} / {data.mintPhase} - nowPhase()
             </s.TextTitle>
             <s.TextDescription
               style={{
