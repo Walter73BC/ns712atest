@@ -205,15 +205,15 @@ const Home = () => {
   
   const nowPhase = () => {
     switch(data.mintPhase){
-	    case 0:
+	    case "0":
 		    return "Pause";
-	    case 1:
+	    case "1":
 		    return "Airdrop";
-	    case 2:
+	    case "2":
 		    return "Presale";
-	    case 3:
+	    case "3":
 		    return "Public Sale";
-	    case 4:
+	    case "4":
 		    return "Finished";
 	    default:
 		    return "Loading ...";
