@@ -130,7 +130,7 @@ const Home = () => {
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
-    if (data.mintPhase = "2" || data.mintPhase = "3") {
+    if (data.mintPhase == "2" || data.mintPhase == "3") {
       setClaimingNft(true);
     } else {
       setClaimingNft(false);
