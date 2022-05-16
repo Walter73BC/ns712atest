@@ -296,7 +296,7 @@ const Home = () => {
               </StyledButton>
             </span>
             <s.SpacerSmall />
-            {(Number(data.totalSupply) >= CONFIG.MAX_SUPPLY) || data.mintPhase === "4" ? (
+            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY || data.mintPhase === "4" ? (
               <>
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -314,21 +314,6 @@ const Home = () => {
                 </StyledLink>
               </>
             ) : (
-                 { data.mintPhase === "0" || data.mintPhase === "1" ? (
-                <>
-                  <s.TextTitle
-                    style={{ textAlign: "center", color: "var(--accent-text)" }}
-                  >
-                    The Minting isn't active.
-                  </s.TextTitle>
-                  <s.TextDescription
-                    style={{ textAlign: "center", color: "var(--accent-text)" }}
-                  >
-                    Please wait for Presale or PublicSale Phase.
-                  </s.TextDescription>
-                  <s.SpacerSmall />
-                </>
-              ) :(
               <>
                 <s.TextTitle
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
@@ -434,9 +419,8 @@ const Home = () => {
                       </StyledButton>
                     </s.Container>
                   </>
-                )}          
+                )}
               </>
-            )}
             )}
             <s.SpacerSmall />
           </s.Container>
