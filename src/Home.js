@@ -321,11 +321,11 @@ const Home = () => {
                   >
                     The Minting is not active.
                   </s.TextTitle>
-                  <s.TextDescription
+                  <s.TextTitle
                     style={{ textAlign: "center", color: "var(--accent-text)" }}
                   >
-                    Please wait for Presale or PublicSale Phase.
-                  </s.TextDescription>
+                    Please wait for [Presale] or [PublicSale] Phase.
+                  </s.TextTitle>
                   <s.SpacerSmall />
                 </>
              ) : (
