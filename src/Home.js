@@ -216,7 +216,7 @@ const Home = () => {
 	    case "4":
 		    return "Finished";
 	    default:
-		    return "Loading ...";
+		    return "";
 	  }
   };
 
@@ -257,7 +257,7 @@ const Home = () => {
                 color: "var(--accent-text)",
               }}
             >
-              {data.totalSupply} / {CONFIG.MAX_SUPPLY} / {nowPhase()}
+              Minting Phase {nowPhase()}
             </s.TextTitle>
             <s.TextDescription
               style={{
