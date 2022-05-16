@@ -31,7 +31,7 @@ export const fetchData = () => {
         .call();
       let mintPhase = await store
         .getState()
-        .blockchain.smartContract.methods.state()
+        .blockchain.smartContract.methods.status()
         .call();
       // let cost = await store
       //   .getState()
