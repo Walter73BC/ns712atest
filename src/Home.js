@@ -212,7 +212,7 @@ const Home = () => {
 	    case "2":
 		    return "Presale";
 	    case "3":
-		    return "Public Sale";
+		    return "PublicSale";
 	    case "4":
 		    return "Finished";
 	    default:
@@ -252,12 +252,12 @@ const Home = () => {
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: 48,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
             >
-              Minting Phase {nowPhase()}
+              Minting-Phase {nowPhase()}
             </s.TextTitle>
             <s.TextDescription
               style={{
