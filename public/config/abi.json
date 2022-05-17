@@ -79,6 +79,32 @@
 		"type": "error"
 	},
 	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "tokenId",
+				"type": "uint256"
+			}
+		],
+		"name": "burn",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address payable",
+				"name": "to",
+				"type": "address"
+			}
+		],
+		"name": "destroySmartContract",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
 		"inputs": [],
 		"name": "MintToZeroAddress",
 		"type": "error"
@@ -128,7 +154,7 @@
 				"type": "uint256"
 			}
 		],
-		"name": "AirdropDone",
+		"name": "Airdropped",
 		"type": "event"
 	},
 	{
@@ -180,19 +206,6 @@
 		],
 		"name": "ApprovalForAll",
 		"type": "event"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
-				"name": "tokenId",
-				"type": "uint256"
-			}
-		],
-		"name": "burn",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
 	},
 	{
 		"anonymous": false,
@@ -256,37 +269,11 @@
 			{
 				"indexed": false,
 				"internalType": "uint256",
-				"name": "presaleTotal",
-				"type": "uint256"
-			}
-		],
-		"name": "PresaleAmountReached",
-		"type": "event"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": false,
-				"internalType": "uint256",
 				"name": "price",
 				"type": "uint256"
 			}
 		],
 		"name": "PriceChanged",
-		"type": "event"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "publicsaleTotal",
-				"type": "uint256"
-			}
-		],
-		"name": "PublicsaleAmountReached",
 		"type": "event"
 	},
 	{
@@ -472,7 +459,7 @@
 	{
 		"inputs": [
 			{
-				"internalType": "enum NSNFTAfa.Status",
+				"internalType": "enum NSNFTGamma.Status",
 				"name": "_status",
 				"type": "uint8"
 			}
@@ -487,7 +474,7 @@
 		"inputs": [
 			{
 				"indexed": false,
-				"internalType": "enum NSNFTAfa.Status",
+				"internalType": "enum NSNFTGamma.Status",
 				"name": "status",
 				"type": "uint8"
 			}
@@ -857,7 +844,7 @@
 		"name": "status",
 		"outputs": [
 			{
-				"internalType": "enum NSNFTAfa.Status",
+				"internalType": "enum NSNFTGamma.Status",
 				"name": "",
 				"type": "uint8"
 			}
